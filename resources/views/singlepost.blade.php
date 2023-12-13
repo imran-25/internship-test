@@ -20,14 +20,14 @@
                         <article>
                             <h2>{{$post->title}}</h2>
                             <h4>Author- {{$post->user->name}}</h4>
-                            
+
                             <p>
                                 {{$post->description}}
                             </p>
                         </article>
                     </section>
                     <footer class="bg-dark p-4">
-                        <a href="https://github.com/minhazul5000">https://github.com/minhazul5000</a>
+                        <a class="btn btn-lg btn-info" href="https://github.com/imran-25"><b>Visit my GitHub Profile</b></a>
                     </footer>
                 </div>
             </div>
