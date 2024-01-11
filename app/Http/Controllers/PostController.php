@@ -9,10 +9,19 @@ class PostController extends Controller
 {
     public function index(){
 
-        $posts = [];
+        $posts = Post::all();
         // get here all post with who user created this post with eager loading.
         // compact the post data to welcome view.
 
         return view('welcome', compact('posts'));
+    }
+
+    public function show($id){
+
+        $post = Post::find($id);
+        // get here all post with who user created this post with eager loading.
+        // compact the post data to welcome view.
+
+        return view('singlepost', compact('post'));
     }
 }
